@@ -1,0 +1,7 @@
+@import '../utilities/variables';
+@import '../utilities/mixins.scss';
+
+.redLine{
+    @include sizes(100%, 50px);
+    background-color: $color-brightred;
+}

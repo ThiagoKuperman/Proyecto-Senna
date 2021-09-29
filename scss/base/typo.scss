@@ -1,0 +1,53 @@
+@import '../utilities/variables';
+
+.articles{
+    display: flex;
+    background-color: $color-lightgray;
+    height: 400px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    .articles__title{
+        font: 'Roboto';
+        font-weight: bold; 
+        font-size: 2em;
+        color: $color-darkgray;
+        height: 75px;
+    }
+    
+    .articles__paragraph{
+        font: 'Roboto';
+        font-size: 1em;
+        width: 75%;
+        text-align: center;
+        font-weight: 700;
+        padding-bottom: 15px;
+        line-height: 20px;
+    }
+}
+.sections{
+    height: 50%;
+    width: 100%;
+
+    .section__darkbg{
+        display: flex;
+        background-color: $color-darkgray;
+        height: 200px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .section__darkbg--paragraph{
+            color: $color-lightgray;
+            font: 'Roboto';
+            font-size: 1em;
+            width: 75%;
+            text-align: center;
+            font-weight: 700;
+        }
+    }
+}
