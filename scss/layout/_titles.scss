@@ -1,0 +1,82 @@
+@import '../utilities/variables';
+@import '../utilities/mixins.scss';
+
+.title{
+    @include sizes(100%, 400px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .title__head{
+        position: relative;
+        z-index: 1;
+        font-family: 'Roboto';
+        font-size: 3em;
+        font-weight: bold;
+        color: white;
+    }
+    .title__paragraph{
+        position: relative;
+        z-index: 1;
+        font-family: 'Roboto';
+        font-size: 1em;
+        color: white;
+        text-align: center;
+        font-weight: 600;
+    }
+    
+}
+.title:before{
+    content: "" ;
+    width: 100%;
+    height: 400px;
+    background-color: $color-black;
+    position: absolute;
+    opacity: 0.4;
+    z-index: 0;
+}
+/**fondos**/
+
+.lotus1985{
+    background-image: url(../Multimedia/rKXPut6.jpg);
+    background-size: 30%;
+}
+.toleman{
+    background-image: url(..//Multimedia/Toleman-TG184-00.jpg);
+    background-size: 50%;
+}
+.mclaren1{
+    background-image: url(..//Multimedia/Ayrton-Senna-McLaren.jpg);
+    background-size: cover;
+}
+.mclaren1988{
+    background-image: url(..//Multimedia/1200px-Ayrton_Senna_in_1988.jpg);
+    background-size: 50%;
+}
+.sennaProst{
+    background-image: url(..//Multimedia/senna-prost-gp-san-marino-1989.jpg);
+    background-size: cover;   
+}
+.williams{
+    background-image: url(..//Multimedia/williams.jpg);
+    background-size: cover;
+}
+.postalSenna{
+    background-image: url(..//Multimedia/postalsenna.jpg);
+    background-size: cover;
+}
+.pasajeInglaterra{
+    background-image: url(..//Multimedia/Senna_-Premium-blog.jpg);
+    background-size: cover;
+}
+.imgBiografia{
+    width: 100%;
+    background-image: url(..//Multimedia/Site-AS-Setembro-Kart-81PP-860x430-1.jpg);
+    background-size: cover;
+    height: 400px;
+}
+.bg-biografia{
+    background-image: url(..//Multimedia/ayrtn-senna-debuta-en-formula-1.jpg);
+    background-size: contain;
+}
