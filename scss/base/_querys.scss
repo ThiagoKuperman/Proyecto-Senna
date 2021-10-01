@@ -1,33 +1,34 @@
+@import 'typo';
+@import '../layout/titles';
+@import '../layout/grid';
+
 @media all and (max-width: 600px){
     .grid-gallery {
         grid-template-columns: repeat(1, 1fr);
       }
-    .title__head{
-        font-size: 2em;
-        padding-top: 60px;
-    } 
-    .title__paragraph{
-        font-size: 0.7em;
-    }
     .articles{
         height: 650px;
+        .articles__title{
+            font-size: 1.6em;
+        }
+        .articles__paragraph{
+            font-size: 0.7em;
+            padding-bottom: 5px;
+            line-height: 15px;
+        }
     }
-    .articles h2{
-        font-size: 1.6em;
-    }
-    .articles h3{
-        font-size: 1.5em;
-    }
-    .articles p{
-        font-size: 0.7em;
-        padding-bottom: 5px;
-        line-height: 15px;
-    }
-    .section__darkbg p{
+    .section__darkbg{
         font-size: 0.8em;
     }
     .title{
         height: 300px;
+        .title__head{
+            font-size: 2em;
+            padding-top: 60px;
+        } 
+        .title__paragraph{
+            font-size: 0.7em;
+        }
     }
     .title:before{
         height: 300px;
@@ -41,26 +42,26 @@
     .grid-gallery {
       grid-template-columns: repeat(1, 1fr);
     }
-    .title__head{
-        font-size: 2em;
-    }
-    .title p{
-        font-size: 0.85em;
-    }
     .articles{
         height: 590px;
+        .articles__title{
+            font-size: 2em;
+        }
+        .articles__paragraph{
+            font-size: 0.85em;
+        }
     }
-    .articles h2,h3{
-        font-size: 2em;
-    }
-    .articles p{
-        font-size: 0.85em;
-    }
-    .section__darkbg p{
+    .section__darkbg {
         font-size: 0.8em;
     }
     .title{
         height: 350px;
+        .title__head{
+            font-size: 2em;
+        }
+        .title__paragraph{
+            font-size: 0.85em;
+        }
     }
     .title:before{
         height: 350px;
@@ -71,8 +72,10 @@
     .grid-gallery {
       grid-template-columns: repeat(3, 1fr);
     }
-    .title__head{
-        font-size: 2.5em;
+    .title{
+        .title__head{
+            font-size: 2.5em;
+        }
     }
   }
   
@@ -80,16 +83,18 @@
     .grid-gallery {
       grid-template-columns: repeat(6, 1fr);
     }
-    .title p{
+    .title{
+        .title__paragraph{
         font-size: 1.1em;
+        }
     }
     .articles{
         height: 600px;
-    }
-    .articles h2,h3{
-        font-size: 2.5em;
-    }
-    .articles p{
-        font-size: 1.1em;
+        .articles__title{
+            font-size: 2.5em;
+        }
+        .articles__paragraph{
+            font-size: 1.1em;
+        }
     }
   }
