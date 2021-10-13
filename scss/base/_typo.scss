@@ -2,7 +2,7 @@
 
 .articles{
     display: flex;
-    background-color: $color-lightgray;
+    background-color: $color-white;
     height: 400px;
     width: 100%;
     align-items: center;
@@ -14,8 +14,10 @@
         font: 'Roboto';
         font-weight: bold; 
         font-size: 2em;
-        color: $color-darkgray;
         height: 75px;
+        body.dark &{
+            color: $color-white;
+        }
     }
     
     .articles__paragraph{
@@ -26,6 +28,13 @@
         font-weight: 700;
         padding-bottom: 15px;
         line-height: 20px;
+        body.dark &{
+            color: $color-white;
+        }
+    }
+    body.dark & {
+       background-color: $color-darkgray; 
+       transition: .3s ease all; 
     }
 }
 .sections{
@@ -34,12 +43,16 @@
 
     .section__darkbg{
         display: flex;
-        background-color: $color-darkgray;
+        background-color: $color-darkblue;
         height: 200px;
         width: 100%;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        body.dark &{
+            background-color: $color-black;
+        }
+
 
         .section__darkbg--paragraph{
             color: $color-lightgray;
@@ -48,6 +61,9 @@
             width: 75%;
             text-align: center;
             font-weight: 500;
+            body.dark &{
+                color: $color-white;
+            }
         }
     }
 }

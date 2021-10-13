@@ -3,6 +3,10 @@
     grid-auto-rows: 200px;
     grid-gap: 1rem;
     grid-auto-flow: row dense;
+    background-color: $color-white;
+    body.dark &{
+        background-color: $color-darkgray;
+    }
 
     .grid-gallery__item:nth-child(11n+1) {
         grid-column: span 1;

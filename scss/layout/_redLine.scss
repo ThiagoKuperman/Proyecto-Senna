@@ -4,4 +4,7 @@
 .redLine{
     @include sizes(100%, 50px);
     background-color: $color-brightred;
+    body.dark &{
+        background-color: $color-black;
+    }
 }
